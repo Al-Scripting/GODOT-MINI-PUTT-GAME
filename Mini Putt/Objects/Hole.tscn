@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://doddjont5vwne"]
+
+[ext_resource type="Texture2D" uid="uid://baqt2rre4sjji" path="res://Sprites/Ball.png" id="1_73djs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n4n5s"]
+radius = 16.0
+
+[node name="Hole" type="StaticBody2D" groups=["Hole"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["Hole"]]
+modulate = Color(0.151276, 0.151276, 0.151276, 1)
+texture = ExtResource("1_73djs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Hole"]]
+shape = SubResource("CircleShape2D_n4n5s")

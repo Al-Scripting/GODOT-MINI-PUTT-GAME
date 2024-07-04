@@ -1,0 +1,305 @@
+[gd_scene load_steps=7 format=3 uid="uid://dr3y1xurred0d"]
+
+[ext_resource type="Script" path="res://Scripts/Game_Manager.gd" id="1_eytjd"]
+[ext_resource type="Texture2D" uid="uid://busr4esulr3ty" path="res://Sprites/Blank.png" id="2_kjvmx"]
+[ext_resource type="PackedScene" uid="uid://dktka5gbwxv67" path="res://Objects/Wall.tscn" id="3_vnhdm"]
+[ext_resource type="PackedScene" uid="uid://doddjont5vwne" path="res://Objects/Hole.tscn" id="4_1vf0v"]
+[ext_resource type="PackedScene" uid="uid://cuwhp6cy770ek" path="res://Objects/Player_1.tscn" id="5_4ugs5"]
+[ext_resource type="PackedScene" uid="uid://cqinaf6cktaa3" path="res://Objects/Power_Bar.tscn" id="6_sdloh"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_eytjd")
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.335634, 0.736747, 0.322184, 1)
+position = Vector2(576, 324)
+scale = Vector2(18, 10.125)
+texture = ExtResource("2_kjvmx")
+
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="Wall" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(32, 32)
+
+[node name="Wall58" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-32, 32)
+
+[node name="Wall59" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-8, 96)
+
+[node name="Wall60" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-8, 160)
+
+[node name="Wall61" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-8, 224)
+
+[node name="Wall62" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-8, 288)
+
+[node name="Wall63" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-8, 352)
+
+[node name="Wall64" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-8, 416)
+
+[node name="Wall65" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-8, 480)
+
+[node name="Wall66" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-8, 544)
+
+[node name="Wall68" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 96)
+
+[node name="Wall69" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 160)
+
+[node name="Wall70" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 224)
+
+[node name="Wall78" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(504, 136)
+
+[node name="Wall79" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(504, 200)
+
+[node name="Wall80" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(504, 264)
+
+[node name="Wall71" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 288)
+
+[node name="Wall72" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 352)
+
+[node name="Wall73" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 416)
+
+[node name="Wall74" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 480)
+
+[node name="Wall75" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 544)
+
+[node name="Wall76" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1184, 608)
+
+[node name="Wall67" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(-32, 608)
+
+[node name="Wall2" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(96, 32)
+
+[node name="Wall3" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(160, 32)
+
+[node name="Wall77" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(272, 240)
+
+[node name="Wall4" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(224, 32)
+
+[node name="Wall4" parent="Walls/Wall4" instance=ExtResource("3_vnhdm")]
+position = Vector2(160, 400)
+
+[node name="Wall5" parent="Walls/Wall4" instance=ExtResource("3_vnhdm")]
+position = Vector2(224, 400)
+
+[node name="Wall6" parent="Walls/Wall4" instance=ExtResource("3_vnhdm")]
+position = Vector2(288, 400)
+
+[node name="Wall7" parent="Walls/Wall4" instance=ExtResource("3_vnhdm")]
+position = Vector2(352, 400)
+
+[node name="Wall8" parent="Walls/Wall4" instance=ExtResource("3_vnhdm")]
+position = Vector2(416, 400)
+
+[node name="Wall9" parent="Walls/Wall4" instance=ExtResource("3_vnhdm")]
+position = Vector2(480, 400)
+
+[node name="Wall5" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(288, 32)
+
+[node name="Wall6" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(352, 32)
+
+[node name="Wall7" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(416, 32)
+
+[node name="Wall8" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(480, 32)
+
+[node name="Wall9" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(544, 32)
+
+[node name="Wall10" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(608, 32)
+
+[node name="Wall11" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(672, 32)
+
+[node name="Wall12" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(736, 32)
+
+[node name="Wall13" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(792, 32)
+
+[node name="Wall14" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(856, 32)
+
+[node name="Wall15" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(920, 32)
+
+[node name="Wall16" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(984, 32)
+
+[node name="Wall17" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1048, 32)
+
+[node name="Wall18" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1112, 32)
+
+[node name="Wall19" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 32)
+
+[node name="Wall20" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(32, 616)
+
+[node name="Wall21" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(96, 616)
+
+[node name="Wall22" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(160, 616)
+
+[node name="Wall23" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(224, 616)
+
+[node name="Wall24" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(288, 616)
+
+[node name="Wall25" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(352, 616)
+
+[node name="Wall26" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(416, 616)
+
+[node name="Wall27" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(480, 616)
+
+[node name="Wall28" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(544, 616)
+
+[node name="Wall29" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(608, 616)
+
+[node name="Wall30" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(672, 616)
+
+[node name="Wall31" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(736, 616)
+
+[node name="Wall32" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(792, 616)
+
+[node name="Wall33" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(856, 616)
+
+[node name="Wall34" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(920, 616)
+
+[node name="Wall35" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(984, 616)
+
+[node name="Wall36" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1048, 616)
+
+[node name="Wall37" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1112, 616)
+
+[node name="Wall38" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 616)
+
+[node name="Wall39" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(32, 680)
+
+[node name="Wall40" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(96, 680)
+
+[node name="Wall41" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(160, 680)
+
+[node name="Wall42" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(224, 680)
+
+[node name="Wall43" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(288, 680)
+
+[node name="Wall44" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(352, 680)
+
+[node name="Wall45" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(416, 680)
+
+[node name="Wall46" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(480, 680)
+
+[node name="Wall47" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(544, 680)
+
+[node name="Wall48" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(608, 680)
+
+[node name="Wall49" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(672, 680)
+
+[node name="Wall50" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(736, 680)
+
+[node name="Wall51" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(792, 680)
+
+[node name="Wall52" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(856, 680)
+
+[node name="Wall53" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(920, 680)
+
+[node name="Wall54" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(984, 680)
+
+[node name="Wall55" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1048, 680)
+
+[node name="Wall56" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1112, 680)
+
+[node name="Wall57" parent="Walls" instance=ExtResource("3_vnhdm")]
+position = Vector2(1176, 680)
+
+[node name="Hole" parent="." instance=ExtResource("4_1vf0v")]
+position = Vector2(928, 328)
+
+[node name="Player_1_Ball" parent="." instance=ExtResource("5_4ugs5")]
+position = Vector2(200, 440)
+
+[node name="Player_2_Ball" parent="." instance=ExtResource("5_4ugs5")]
+modulate = Color(1, 0.301961, 1, 1)
+position = Vector2(208, 352)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = 776.0
+offset_top = 424.0
+offset_right = 818.0
+offset_bottom = 447.0
+text = "WINS"
+
+[node name="PowerBar" parent="." instance=ExtResource("6_sdloh")]
+position = Vector2(592, 616)
+
+[connection signal="Player_1_Turn" from="." to="Player_1_Ball" method="_on_main_player_1_turn"]
+[connection signal="Player_2_Turn" from="." to="Player_2_Ball" method="_on_main_player_2_turn"]
+[connection signal="Ball_Stopped" from="Player_1_Ball" to="." method="_on_player_1_ball_stopped"]
+[connection signal="Completed_Hole" from="Player_1_Ball" to="." method="_on_player_1_completed_hole"]
+[connection signal="Ball_Stopped" from="Player_2_Ball" to="." method="_on_player_2_ball_stopped"]
+[connection signal="Completed_Hole" from="Player_2_Ball" to="." method="_on_player_2_completed_hole"]

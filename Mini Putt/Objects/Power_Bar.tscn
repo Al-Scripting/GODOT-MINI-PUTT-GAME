@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqinaf6cktaa3"]
+
+[ext_resource type="Script" path="res://Scripts/Power_Bar.gd" id="1_qvetd"]
+[ext_resource type="Texture2D" uid="uid://busr4esulr3ty" path="res://Sprites/Blank.png" id="2_djjmp"]
+
+[node name="Power_Bar" type="Node2D"]
+script = ExtResource("1_qvetd")
+
+[node name="Backing_1" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(8.8, 1)
+texture = ExtResource("2_djjmp")
+
+[node name="Backing_2" type="Sprite2D" parent="."]
+scale = Vector2(8.52, 0.788092)
+texture = ExtResource("2_djjmp")
+
+[node name="Meter" type="Node2D" parent="."]
+
+[node name="Bar" type="Sprite2D" parent="Meter"]
+modulate = Color(0.401704, 0.716924, 0.434178, 1)
+position = Vector2(-0.160004, 0)
+scale = Vector2(8.505, 0.76)
+texture = ExtResource("2_djjmp")
